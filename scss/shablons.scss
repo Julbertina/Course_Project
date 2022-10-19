@@ -1,0 +1,61 @@
+%font_hero {
+    font-family: $font_bold;
+    font-size: 38px;
+    line-height: 46px;
+}
+
+%h2 {
+    font-family: $font_bold;
+    font-size: 30px;
+    line-height: 37px;
+}
+
+%h3 {
+    font-family: $font_bold;
+    font-size: 22px;
+    line-height: 27px;
+}
+
+%paragraph {
+    font-family: $font_main;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%flex-sb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+%flex-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+%flex-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+%text-gradient-red {
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+%text-gradient-red-reversed {
+    background-image: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
