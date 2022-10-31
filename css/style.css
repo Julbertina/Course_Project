@@ -78,6 +78,10 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 .header,
 .header-mobile {
   padding-top: 50px;
@@ -101,6 +105,38 @@
 .main {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   border-radius: 0px 0px 12px 12px;
+}
+
+.main::after {
+  content: "";
+  position: absolute;
+  width: 97vw;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: #CACADB;
+  border-radius: 0 0 12px 12px;
+  margin: auto;
+}
+
+.wrap {
+  margin-bottom: 10px;
+}
+
+.wrap.service {
+  margin-bottom: 70px;
+}
+
+.wrap::after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 94vw;
+  top: 10px;
+  margin: 0 auto;
+  height: 10px;
+  background: #E7E7F2;
+  border-radius: 0 0 12px 12px;
 }
 
 .main__section-first {
@@ -243,6 +279,10 @@
   align-items: flex-start;
 }
 
+.header__button:active {
+  transform: scale(0.9);
+}
+
 .section-first__moto {
   color: #FFFFFF;
   text-align: center;
@@ -371,19 +411,9 @@
   max-width: 400px;
 }
 
-.shade1 {
-  margin: 0 20px;
-  height: 10px;
-  background: #CACADB;
-  border-radius: 0 0 12px 12px;
-}
-
-.shade2 {
-  margin: 0 40px;
-  height: 10px;
-  background: #E7E7F2;
-  border-radius: 0 0 12px 12px;
-  margin-bottom: 60px;
+.about-team,
+.partners {
+  padding-top: 60px;
 }
 
 .main__section-fourth {
@@ -403,10 +433,6 @@
   background-image: url(../images/team/Team-1.jpg);
   background-size: 100%;
   background-position: 50% 50%;
-}
-
-.section-third__dot_holder {
-  margin-bottom: 60px;
 }
 
 .section-fourth__text {
@@ -500,6 +526,10 @@
   background-color: #9E4DC3;
 }
 
+.orange2 {
+  background-color: #FD9339;
+}
+
 .grey {
   background-color: #E2E2E4;
 }
@@ -531,6 +561,10 @@
 .footer {
   background-color: #F5F5FA;
   padding: 30px 0;
+}
+
+.footer.service {
+  border-radius: 12px 12px 0 0;
 }
 
 .footer__wraper {
@@ -913,6 +947,7 @@
   }
   .footer__card__img {
     width: 281.33px;
+    background-size: 118%;
   }
   .footer__card__title,
 .footer__card__text {
@@ -1013,6 +1048,7 @@
   }
   .footer__card__img {
     width: 309px;
+    background-size: 108%;
   }
   .footer__card__img.publ-3 {
     width: 648px;
@@ -1123,6 +1159,10 @@
   }
   .section-third__card-holder__card {
     margin-bottom: 30px;
+  }
+  .about-team,
+.partners {
+    padding-top: 30px;
   }
   .section-fourth__photo {
     height: 500px;
